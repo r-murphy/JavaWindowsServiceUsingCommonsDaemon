@@ -1,0 +1,63 @@
+[2015-09-25 16:44:16] [debug] ( prunsrv.c:1519) Commons Daemon procrun log initialized
+[2015-09-25 16:44:16] [info]  (          :0   ) Commons Daemon procrun (1.0.7.0 32-bit) started
+[2015-09-25 16:44:16] [info]  (          :0   ) Running 'LoggerService' Service...
+[2015-09-25 16:44:16] [debug] ( prunsrv.c:1259) Inside ServiceMain...
+[2015-09-25 16:44:16] [info]  (          :0   ) Starting service...
+[2015-09-25 16:44:16] [debug] ( javajni.c:206 ) loading jvm 'C:\Program Files\Java\jdk1.7.0_79\jre\bin\server\jvm.dll'
+[2015-09-25 16:44:16] [debug] ( javajni.c:251 ) Setting DLL search path to 'C:\Program Files\Java\jdk1.7.0_79\jre\bin\server'
+[2015-09-25 16:44:16] [debug] ( javajni.c:251 ) Setting DLL search path to 'C:\Program Files\Java\jdk1.7.0_79\jre\bin'
+[2015-09-25 16:44:16] [error] ( javajni.c:264 ) %1 is not a valid Win32 application.
+[2015-09-25 16:44:16] [error] ( prunsrv.c:1045) Failed creating java C:\Program Files\Java\jdk1.7.0_79\jre\bin\server\jvm.dll
+[2015-09-25 16:44:16] [error] ( prunsrv.c:1045) %1 is not a valid Win32 application.
+[2015-09-25 16:44:16] [error] ( prunsrv.c:1402) ServiceStart returned 1
+[2015-09-25 16:44:16] [error] ( prunsrv.c:1402) %1 is not a valid Win32 application.
+[2015-09-25 16:44:16] [info]  (          :0   ) Run service finished.
+[2015-09-25 16:44:16] [info]  (          :0   ) Commons Daemon procrun finished
+[2015-09-25 16:46:51] [debug] ( prunsrv.c:1679) [ 1684] Commons Daemon procrun log initialized
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1683) [ 1684] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:763 ) [ 1684] Updating service...
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:819 ) [ 1684] Service 'LoggerService' updated
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:826 ) [ 1684] Update service finished.
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1764) [ 1684] Commons Daemon procrun finished
+[2015-09-25 16:46:51] [debug] ( prunsrv.c:1679) [  448] Commons Daemon procrun log initialized
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1683) [  448] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:763 ) [  448] Updating service...
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:819 ) [  448] Service 'LoggerService' updated
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:826 ) [  448] Update service finished.
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1764) [  448] Commons Daemon procrun finished
+[2015-09-25 16:46:51] [debug] ( prunsrv.c:1679) [ 2788] Commons Daemon procrun log initialized
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1683) [ 2788] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:763 ) [ 2788] Updating service...
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:819 ) [ 2788] Service 'LoggerService' updated
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:826 ) [ 2788] Update service finished.
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1764) [ 2788] Commons Daemon procrun finished
+[2015-09-25 16:46:51] [debug] ( prunsrv.c:1679) [ 2756] Commons Daemon procrun log initialized
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1683) [ 2756] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:763 ) [ 2756] Updating service...
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:819 ) [ 2756] Service 'LoggerService' updated
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:826 ) [ 2756] Update service finished.
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1764) [ 2756] Commons Daemon procrun finished
+[2015-09-25 16:46:51] [debug] ( prunsrv.c:1679) [ 6688] Commons Daemon procrun log initialized
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1683) [ 6688] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:763 ) [ 6688] Updating service...
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:819 ) [ 6688] Service 'LoggerService' updated
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:826 ) [ 6688] Update service finished.
+[2015-09-25 16:46:51] [info]  ( prunsrv.c:1764) [ 6688] Commons Daemon procrun finished
+[2015-09-25 16:47:02] [debug] ( prunsrv.c:1679) [ 7636] Commons Daemon procrun log initialized
+[2015-09-25 16:47:02] [info]  ( prunsrv.c:1683) [ 7636] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:47:02] [info]  ( prunsrv.c:1596) [ 7636] Running 'LoggerService' Service...
+[2015-09-25 16:47:02] [debug] ( prunsrv.c:1374) [ 7772] Inside ServiceMain...
+[2015-09-25 16:47:02] [debug] ( prunsrv.c:844 ) [ 7772] reportServiceStatusE: 2, 0, 3000, 0
+[2015-09-25 16:47:02] [info]  ( prunsrv.c:1127) [ 7772] Starting service...
+[2015-09-25 16:47:02] [debug] ( javajni.c:233 ) [ 7772] loading jvm 'C:\Program Files\Java\jdk1.7.0_79\jre\bin\server\jvm.dll'
+[2015-09-25 16:47:02] [debug] ( javajni.c:704 ) [ 7784] Jvm Option[0] -Djava.io.tmpdir=C:\Development\JavaWindowsServiceUsingCommonsDaemon\temp
+[2015-09-25 16:47:02] [debug] ( javajni.c:704 ) [ 7784] Jvm Option[1] -Djava.class.path=C:\Development\JavaWindowsServiceUsingCommonsDaemon;C:\Development\JavaWindowsServiceUsingCommonsDaemon\target\JavaWindowsServiceUsingCommonsDaemon-0.0.1-SNAPSHOT.jar
+[2015-09-25 16:47:02] [debug] ( javajni.c:704 ) [ 7784] Jvm Option[2] exit
+[2015-09-25 16:47:02] [debug] ( javajni.c:704 ) [ 7784] Jvm Option[3] -Xms128m
+[2015-09-25 16:47:02] [debug] ( javajni.c:704 ) [ 7784] Jvm Option[4] -Xmx256m
+[2015-09-25 16:47:02] [debug] ( javajni.c:888 ) [ 7784] argv[0] = start
+[2015-09-25 16:47:02] [debug] ( javajni.c:941 ) [ 7784] Java Worker thread started com/ulrichpalha/service/LoggerService:start
+[2015-09-25 16:47:03] [debug] ( prunsrv.c:1186) [ 7772] Java started com/ulrichpalha/service/LoggerService
+[2015-09-25 16:47:03] [info]  ( prunsrv.c:1284) [ 7772] Service started in 1534 ms.
+[2015-09-25 16:47:03] [debug] ( prunsrv.c:844 ) [ 7772] reportServiceStatusE: 4, 0, 0, 0
+[2015-09-25 16:47:03] [debug] ( prunsrv.c:1528) [ 7772] Waiting for worker to finish...

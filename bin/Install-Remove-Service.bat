@@ -15,7 +15,7 @@ cd "%CURRENT_DIR%"
 
 
 ::---------------------------------------------
-:: -- Update this section to match your needs 
+:: -- Update this section to match your needs
 ::---------------------------------------------
 
 ::-- 1. This name should match the name you gave to the prunsrv executable
@@ -42,7 +42,7 @@ set CG_PATH_TO_JAR_CONTAINING_SERVICE=%APPLICATION_SERVICE_HOME%\target\JavaWind
 set CG_STARTUP_TYPE=auto
 
 ::-- 7. Set this if you want to use a different JVM than configured in your registry, or if it is not configured in windows registry
-set CG_PATH_TO_JVM=%JAVA_HOME%\jre\bin\server\jvm.dll
+set CG_PATH_TO_JVM="%JAVA_HOME%\jre\bin\server\jvm.dll"
 
 ::---- Set other options via environment variables, just as an example -------
 set PR_DESCRIPTION=Logger Service v1.0
@@ -57,14 +57,15 @@ if /i %1 == install goto install
 if /i %1 == remove goto  remove
 
 :displayUsage
-echo Usage: service.bat install/remove [service_name] 
+echo Usage: service.bat install/remove [service_name]
 goto end
 
 
 :remove
 ::---- Remove the service -------
-"%EXECUTABLE%" //DS//%SERVICE_NAME%
-echo The service '%SERVICE_NAME%' has been removed
+set EXECUTE_STRING= "%EXECUTABLE%" //DS//%SERVICE_NAME%
+call:executeAndPrint %EXECUTE_STRING%
+
 goto end
 
 :install
@@ -72,23 +73,31 @@ goto end
 echo Installing service '%SERVICE_NAME%' ...
 echo.
 
-set EXECUTE_STRING= %EXECUTABLE% //IS//%SERVICE_NAME%  --Startup %CG_STARTUP_TYPE%  --StartClass %CG_START_CLASS% --StopClass %CG_STOP_CLASS%
+set JAVA_TMPDIR=%APPLICATION_SERVICE_HOME%\temp
+if EXIST %JAVA_TMPDIR% goto skipCreateTempFolder
+echo "Creating java temp dir: %JAVA_TMPDIR%"
+md %JAVA_TMPDIR%
+:skipCreateTempFolder
+
+set EXECUTE_STRING= "%EXECUTABLE%" //IS//%SERVICE_NAME%  --Startup %CG_STARTUP_TYPE%  --StartClass %CG_START_CLASS% --StopClass %CG_STOP_CLASS%
+call:executeAndPrint %EXECUTE_STRING%
+
+set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --LogPath %PR_LOGPATH% --LogLevel DEBUG --LogPrefix %SERVICE_NAME%
 call:executeAndPrint %EXECUTE_STRING%
 
 set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --StartMode jvm --StopMode jvm --Jvm %CG_PATH_TO_JVM%
 call:executeAndPrint %EXECUTE_STRING%
 
-set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --StartMethod %CG_START_METHOD% --StopMethod  %CG_STOP_METHOD% 
+set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --StartMethod %CG_START_METHOD% --StopMethod  %CG_STOP_METHOD%
 call:executeAndPrint %EXECUTE_STRING%
 
-set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --StartParams %CG_START_PARAMS% --StopParams %CG_STOP_PARAMS% 
+set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% --StartParams %CG_START_PARAMS% --StopParams %CG_STOP_PARAMS%
 call:executeAndPrint %EXECUTE_STRING%
 
-set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% ++JvmOptions "-Djava.io.tmpdir=%APPLICATION_SERVICE_HOME%\temp;" --JvmMs 128 --JvmMx 256
+set EXECUTE_STRING= "%EXECUTABLE%" //US//%SERVICE_NAME% ++JvmOptions "-Djava.io.tmpdir=%JAVA_TMPDIR%;" --JvmMs 128 --JvmMx 256
 call:executeAndPrint %EXECUTE_STRING%
 
-echo. 
-echo The service '%SERVICE_NAME%' has been installed.
+echo.
 
 goto end
 
@@ -102,5 +111,3 @@ echo %*
 goto:eof
 
 :end
-
-

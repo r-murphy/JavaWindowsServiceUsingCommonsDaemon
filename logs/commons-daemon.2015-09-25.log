@@ -1,0 +1,8 @@
+[2015-09-25 16:46:49] [info]  [ 7068] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:49] [info]  [ 7068] Deleting service...
+[2015-09-25 16:46:49] [info]  [ 7068] Delete service finished.
+[2015-09-25 16:46:49] [info]  [ 7068] Commons Daemon procrun finished
+[2015-09-25 16:46:51] [info]  [ 7208] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-09-25 16:46:51] [info]  [ 7208] Service LoggerService name Logger Service
+[2015-09-25 16:46:51] [info]  [ 7208] Service 'LoggerService' installed
+[2015-09-25 16:46:51] [info]  [ 7208] Commons Daemon procrun finished
